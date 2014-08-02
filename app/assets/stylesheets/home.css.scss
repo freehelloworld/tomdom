@@ -1,0 +1,35 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#tel{
+	background:asset-url("tel.png") no-repeat; 
+	padding-left: 55px;
+    padding-top: 10px; 
+	height: 50px; 
+	font-size: 26px; 
+	font-weight: bold; 
+	color: #222
+}
+#mail{
+	background:asset-url("email.png") no-repeat; 
+	padding-left: 55px;
+    padding-top: 10px; 
+	height: 50px; 
+	font-size: 26px; 
+	font-weight: bold; 
+	color: #222
+}
+
+#contactus{
+	background-color: #fff;
+	border-style: dotted;
+	border-color: #89c236;
+	padding-left: 30px;
+	padding-top: 5px;
+	margin-bottom:3px;
+}
+
+#ourbest{
+	color:#89c236;
+}
