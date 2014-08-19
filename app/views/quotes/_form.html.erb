@@ -1,0 +1,167 @@
+<%= form_for @quote, :html => { :class => 'form-horizontal' } do |f| %>
+  <div class="control-group">
+    <%= f.label :enquiry_type, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.select(:enquiry_type, [['Get a Quote',1], ['Make a Booking',2],['Urgent Clean Request',3]], {:include_blank => 'none'}) %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :name, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :name, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :phone, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.telephone_field :phone, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :email, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.email_field :email, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :address, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :address, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :suburban, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :suburban, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :postcode, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :postcode, :class => 'text_field' %>
+    </div>
+  </div>
+
+  <div class="control-group span3">
+    <%= f.label "End of Lease Cleaning", :class => 'control-label' %>
+    <div class="controls">
+      <%= f.check_box :endofleaseclean, :class => 'check_box' %>
+    </div>
+    </div>
+    <div class="control-group">
+      <%= f.label "Deep House Cleaning", :class => 'control-label' %>
+      <div class="controls">
+        <%= f.check_box :deephouse, :class => 'check_box' %>
+      </div>
+    </div>
+    <div class="control-group span3">
+      <%= f.label "After Builders Cleaning", :class => 'control-label' %>
+      <div class="controls">
+        <%= f.check_box :afterbuilders, :class => 'check_box' %>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= f.label "Steam Carpet Cleaning", :class => 'control-label' %>
+      <div class="controls">
+        <%= f.check_box :steamcarpet, :class => 'check_box' %>
+      </div>
+    </div>
+    <div class="control-group span3">
+      <%= f.label "Move In Cleaning", :class => 'control-label' %>
+      <div class="controls">
+        <%= f.check_box :movein, :class => 'check_box' %>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= f.label "Spring Cleaning", :class => 'control-label' %>
+      <div class="controls">
+        <%= f.check_box :spring, :class => 'check_box' %>
+      </div>
+    </div>
+    <div class="control-group span3">
+      <%= f.label "Regular Cleaning", :class => 'control-label' %>
+      <div class="controls">
+        <%= f.check_box :regular, :class => 'check_box' %>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= f.label "Upholstery Cleaning", :class => 'control-label' %>
+      <div class="controls">
+        <%= f.check_box :upholstery, :class => 'check_box' %>
+      </div>
+    </div>
+
+
+  <div class="control-group">
+    <%= f.label :premises_type, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.select(:premises_type, [['Unit',1], ['Apartment',2],['Town House',3],['Single Storey House',4],['Double Storey House',5],['Other',6]], {:include_blank => 'none'}) %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :frequency, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.select(:frequency, [['One off',1], ['Weekly',2],['Fortnightly',3],['Mouthly',4]], {:include_blank => 'none'}) %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :bedrooms, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.select(:bedrooms, [['One',1], ['Two',2],['Three',3],['Four',4],['Five+',5]], {:include_blank => 'none'}) %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :bathrooms, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.select(:bathrooms, [['One',1], ['Two',2],['Three',3],['Four+',4]], {:include_blank => 'none'}) %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :livingrooms, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.select(:livingrooms, [['One',1], ['Two',2],['Three',3],['Four+',4]], {:include_blank => 'none'}) %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :carpets, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.select(:carpets, [['One Room',1], ['One Room and Hallway',2],['One Room, Hallway and Staires',3],['Two Rooms',4], ['Two Rooms and Hallway',5],['Two Rooms, Hallway and Staires',6],['Three Rooms',7], ['Three Rooms and Hallway',8],['Three Rooms, Hallway and Staires',9],['Four Rooms',10], ['Four Rooms and Hallway',11],['Four Rooms, Hallway and Staires',12],['Five Rooms',13], ['Five Rooms and Hallway',14],['Five Rooms, Hallway and Staires',15],['Other',16]], {:include_blank => 'none'}) %>    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label "Is your premise furnished", :class => 'control-label' %>
+    <div class="controls">
+      <div class="span1">
+        
+        <%= f.radio_button :isfurnished,true %>
+        <%= f.label :isfurnished, "Yes", :value => "true"  %>
+        </div>
+        <div class="span1">
+        <%= f.radio_button :isfurnished, false, :checked => true %>
+        <%= f.label :isfurnished, "No", :value => "false" %>
+        </div>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label "Preferred date", :class => 'control-label' %>
+    <div class="controls">
+      <%= f.date_field :preferdate, :class => 'date_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label "Other requires or comment", :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_area :comment, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label "Where did you find us", :class => 'control-label' %>
+    <div class="controls">
+       <%= f.select(:media, [['Google',1], ['Yellow Page',2],['Newspaper',3],['Others',4]], {:include_blank => 'none'}) %>
+    </div>
+  </div>
+
+  <div class="form-actions">
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+
+  </div>
+<% end %>

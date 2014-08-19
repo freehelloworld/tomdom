@@ -1,0 +1,55 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  type: 1
+  name: MyString
+  phone: MyString
+  email: MyString
+  address: MyString
+  suburban: MyString
+  postcode: MyString
+  endofleaseclean: false
+  deephouse: false
+  afterbuilders: false
+  steamcarpet: false
+  movein: false
+  spring: false
+  regular: false
+  upholstery: false
+  premises_type: 1
+  frequency: 1
+  bedrooms: 1
+  bathrooms: 1
+  livingrooms: 1
+  carpets: 1
+  isfurnished: false
+  preferdate: MyString
+  comment: MyText
+  media: 1
+
+two:
+  type: 1
+  name: MyString
+  phone: MyString
+  email: MyString
+  address: MyString
+  suburban: MyString
+  postcode: MyString
+  endofleaseclean: false
+  deephouse: false
+  afterbuilders: false
+  steamcarpet: false
+  movein: false
+  spring: false
+  regular: false
+  upholstery: false
+  premises_type: 1
+  frequency: 1
+  bedrooms: 1
+  bathrooms: 1
+  livingrooms: 1
+  carpets: 1
+  isfurnished: false
+  preferdate: MyString
+  comment: MyText
+  media: 1

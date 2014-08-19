@@ -40,22 +40,23 @@
 					<h2 id="ourbest">We are the best at:</h2>
 					<ul class="disc" id="best">
 						<li>
-							<a href="oven.html">Oven Cleaning</a>
+							<%= link_to "Oven Cleaning", oven_path %>
 						</li>
 						<li>
-							<a href="cubicle.html">Shower Cubicle Cleaning</a>
+							<%= link_to "Shower Cubicle Cleaning", shower_path %>
 						</li>
 						<li>
-							<a href="toilet.html">Toilet Cleaning</a>
+							<%= link_to "Toilet Cleaning", toilet_path %>
 						</li>
 					   <li>
-							<a href="cabinet.html">Cabinet Cleaning</a>
+					   		<%= link_to "Cabinet  Cleaning", cabinet_path %>
 						</li>
 						<li>
-							<a href="closet.html">Closet Cleaning</a>
+							<%= link_to "Closet Cleaning", closet_path %>
 						</li>
 					</ul>
-					<a class="btn btn-primary btn-lg" href="quote.html">Get a Quote</a>
+					<%= link_to "Get a Quote", new_quote_path, :class=>"btn btn-primary" %>
+	
 				</div>
 		  </div>
 	</div>

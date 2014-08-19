@@ -29,9 +29,7 @@
 					
 				<!--start: Logo -->
 				<div class="logo span3">
-						
-					<a class="brand" href="#"><%= image_tag "logo.png"%></a>
-						
+					<%= link_to image_tag("logo.png", :class=>"brand"), home_path%>
 				</div>
 				<!--end: Logo -->
 					
@@ -47,9 +45,8 @@
 			          		</a>
 			          		<div class="nav-collapse collapse">
 			            		<ul class="nav">
-			              			<li class="active"><a href="index.html">Home</a></li>
-			              			<li><a href="quote.html">Get a Quote</a></li>
-
+			              			<li class="<%= is_active?(home_path)%>"><%= link_to "Home", home_path %></li>
+			              			<li class="<%= is_active?(new_quote_path)%>"><%= link_to "Get a Quote", new_quote_path %></li>
 			            		</ul>
 			          		</div>
 			        	</div>

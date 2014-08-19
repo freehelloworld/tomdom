@@ -1,6 +1,14 @@
 Rails.application.routes.draw do
+  resources :quotes
+
   get 'home/index'
   root 'home#index', as: 'home'
+  
+  get 'home/oven', as: 'oven'
+  get 'home/shower', as: 'shower'
+  get 'home/toilet', as: 'toilet'
+  get 'home/cabinet', as: 'cabinet'
+  get 'home/closet', as: 'closet'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

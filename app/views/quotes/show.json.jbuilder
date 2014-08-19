@@ -1,0 +1,1 @@
+json.extract! @quote, :id, :type, :name, :phone, :email, :address, :suburban, :postcode, :endofleaseclean, :deephouse, :afterbuilders, :steamcarpet, :movein, :spring, :regular, :upholstery, :premises_type, :frequency, :bedrooms, :bathrooms, :livingrooms, :carpets, :isfurnished, :preferdate, :comment, :media, :created_at, :updated_at
